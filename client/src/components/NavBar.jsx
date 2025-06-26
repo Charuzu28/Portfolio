@@ -1,29 +1,56 @@
 import React, {useState} from 'react'
+import{ Menu, X } from 'lucide-react'
 
 const NavBar = () => {
   const [showDropdown, setShowDropDown] = useState(false);
+  const navigation = ['Projects', 'Contact', 'About'];
   return (
-    <nav className='flex justify-between px-4 py-6 items-center w-full relative shadow-md'>
-      
-      
-          <h1 clas>Charles A.</h1>
-          
-        <ul className='flex items-center'>
-          <li className='px-2 relative'onClick={ () =>setShowDropDown(!showDropdown)}>
-            <button className='hover:underline cusroir-pointer'>Projects</button>
-            {showDropdown &&(
-              <ul className='absolute rounded z-10 bg-white right-0 shadow-md px-2 py-2 w-48 mt-2'>
-                <li><a href="" className='px-2 hover:underline'>Web Projects</a></li>
-                <li><a href="" className='px-2 hover:underline'>Mobile Projects</a></li>
-                <li><a href="" className='px-2 hover:underline'>UI/UX Designs</a></li>
-                <li><a href="" className='px-2 hover:underline'>Graphic Designs</a></li>
-              </ul>
-            )}
-            </li>
-          <li><a href="">Contacts</a></li>
-          <li><a href=""></a></li>
-        </ul>
+    <nav className='bg-white sticky shadow-md top-0 z-50'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <div className='flex justify-between items-center h-16'>
+            <div>
+                Charles <span className=''>.</span>
+            </div>
+
+              <div className='hidden md:flex space-x-8'>
+                {navigation.map((item) => (
+                  <a 
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className='text-gray-600 hover:text-blue-600 font-medium transition'
+                  >
+                    {item}
+                  </a>
+                ))}
+              </div>
+              
+              <div className='md:hidden'>
+                  <button
+                  onClick={() => setShowDropDown(!showDropdown)}
+                  className='text-gray-800 focus:outline-none'
+                  >
+                    {showDropdown ? <X size={24} /> : <Menu size={24} />}
+                  </button>
+              </div>
+          </div>
+        </div>
+
+        {showDropdown &&(
+          <div className='md:hidden px-4 py-4 space-y-6'>
+            {navigation.map((item) => (
+              <a 
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className='block hover:text-blue-500 font-medium transition text-gray-800'
+              >
+                {item}
+              </a>
+            ))}
+          </div>
+        )}
     </nav>
+
+    
   )
 }
 
