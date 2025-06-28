@@ -10,8 +10,9 @@ const NavBar = () => {
     <nav className='bg-white sticky shadow-md top-0 z-50'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex justify-between items-center h-16'>
-            <div className='font-bold text-3xl'>
-                Chs<span className='text-blue-500 font-bold text-3xl'>.</span>
+            <div className='font-bold text-3xl'> 
+              <a href="#">Chs<span className='text-blue-500 font-bold text-3xl'>.</span></a>
+                
             </div>
 
               <div className='hidden md:flex space-x-8'>
