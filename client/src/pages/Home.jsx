@@ -2,15 +2,17 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <main className='flex-1 items-center justify-center'>
-      <section className='flex-1 px-2 py-2'>
-          <h1>Welcome!</h1>
-            <h2>I am Charles.</h2>
-            <p>A Web developer, Web Designer, and Graphic Designer.</p>
+    <main className='flex flex-col-reverse md:flex-row px-6 py-10 min-h-screen mx-auto max-w-7xl items-center justify-between'>
+      <section className='flex-1 text-center md:text-left space-y-3'>
+          <h1 className='text-3xl md:text-4xl font-bold font-poppins'>Hi! Welcome to my page!</h1>
+            <h2 className='text-2xl md:text-3xl font-poppins'>I am <span className='font-poppins font-bold'>Charles</span><span className='text-blue-500 font-bold'>.</span></h2>
+            <p className='text-lg md:text-xl text-gray-600 font-poppins'>A Web developer, Web Designer, and Graphic Designer.</p>
         </section>
 
-        <section>
-           Photo
+        <section className='flex-1 flex items-center justify-center mb-10 md:mb-0'>
+           <div className='bg-gray-300 shadow-md rounded-full w-48 h-48 md:w-72 md:h-72'>
+            Photo
+           </div>
         </section>
     </main>
   )
