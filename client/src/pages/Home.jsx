@@ -2,6 +2,9 @@ import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import myPhoto from './../assets/2.png'
+import { SiMongodb, SiExpress, SiPhp ,SiApache } from "react-icons/si";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
 
 const Home = () => {
   return (
@@ -47,8 +50,22 @@ const Home = () => {
             />
           </div>
       </section>
-
-
+        
+        {/* Tech stack */}
+      <section className=''>
+            <h2 className='text-black font-bold text-2xl'>Tech Stacks</h2>
+            <div>
+              <SiMongodb />
+              <SiExpress />
+              <FaReact />
+              <FaNodeJs />
+            </div>
+            <div>
+              <SiApache />
+              <DiMysql />
+              <SiPhp />
+            </div>
+      </section>
     </main>
   )
 }
