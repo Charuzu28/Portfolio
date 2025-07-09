@@ -1,16 +1,18 @@
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from "react-icons/fa";
+
 import { FaInstagramSquare } from "react-icons/fa";
+
 import myPhoto from './../assets/2.png'
-import { SiMongodb, SiExpress, SiPhp ,SiApache } from "react-icons/si";
-import { FaReact, FaNodeJs } from "react-icons/fa";
-import { DiMysql } from "react-icons/di";
+import IconMarquee from '../components/IconMarquee';
+
+
 
 const Home = () => {
   return (
-    <main className='flex px-6 py-10 min-h-screen mx-auto max-w-7xl'>
-      <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto'>
-          <div className='flex-1 text-center md:text-left space-y-3'>
+    <main className='px-6 py-10 min-h-screen mx-auto max-w-7xl space-x-7'>
+      <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto md:p-20 md:m-0 m-10'>
+          <div className='flex-1 text-center md:text-left space-y-3 p-10'>
             <h1 className='text-3xl md:text-4xl font-bold font-poppins'>Hi! Welcome to my page!</h1>
               <h2 className='text-2xl md:text-3xl font-poppins'>I am <span className='font-poppins font-bold'>Charles</span><span className='text-blue-500 font-bold'>.</span></h2>
               <p className='text-lg md:text-xl text-gray-600 font-poppins'>A Web developer, Web Designer, and Graphic Designer.</p>
@@ -40,7 +42,7 @@ const Home = () => {
               </div>
           </div>
 
-          <div className='flex-1 flex items-center justify-center mb-10 md:mb-0'>
+          <div className='flex items-center justify-center mb-10 md:mb-0'>
             {/* <div className='bg-gray-300 shadow-md rounded-full w-48 h-48 md:w-72 md:h-72'>
             </div> */}
             <img
@@ -50,21 +52,13 @@ const Home = () => {
             />
           </div>
       </section>
+
+       <div className="my-25" />
         
         {/* Tech stack */}
-      <section className=''>
-            <h2 className='text-black font-bold text-2xl'>Tech Stacks</h2>
-            <div>
-              <SiMongodb />
-              <SiExpress />
-              <FaReact />
-              <FaNodeJs />
-            </div>
-            <div>
-              <SiApache />
-              <DiMysql />
-              <SiPhp />
-            </div>
+      <section className='mt-10 py-7 px-7'>
+        <h3 className="text-3xl text-center font-bold mb-4">Tech Stack & Tools</h3>
+           <IconMarquee />
       </section>
     </main>
   )
