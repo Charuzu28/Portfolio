@@ -3,15 +3,18 @@ import { FaLinkedin } from "react-icons/fa";
 
 import { FaInstagramSquare } from "react-icons/fa";
 
-import myPhoto from './../assets/2.png'
+import myPhoto from './../assets/mypics/2.png'
 import IconMarquee from '../components/IconMarquee';
+
+import ProjectCard from '../components/ProjectCard';
+import Uiweb from '../assets/project/UIweb.png'
 
 
 
 const Home = () => {
   return (
-    <main className='px-6 py-10 min-h-screen mx-auto max-w-7xl space-x-7'>
-      <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto md:p-20 md:m-0 m-10'>
+    <main className='min-h-screen mx-auto max-w-7xl'>
+      <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto md:p-20 md:m-0 h-screen mt-10'>
           <div className='flex-1 text-center md:text-left space-y-3 p-10'>
             <h1 className='text-3xl md:text-4xl font-bold font-poppins'>Hi! Welcome to my page!</h1>
               <h2 className='text-2xl md:text-3xl font-poppins'>I am <span className='font-poppins font-bold'>Charles</span><span className='text-blue-500 font-bold'>.</span></h2>
@@ -52,13 +55,42 @@ const Home = () => {
             />
           </div>
       </section>
-
-       <div className="my-25" />
         
         {/* Tech stack */}
-      <section className='mt-10 py-7 px-7'>
+      <section className='py-16 px-8 w-full max-w-6xl mx-auto items-center justify-center'>
         <h3 className="text-3xl text-center font-bold mb-4">Tech Stack & Tools</h3>
-           <IconMarquee />
+        <div className="">
+            <IconMarquee />
+        </div>
+      </section>
+
+      <section className='w-full py-16 px-8' id='projects'>
+        <h1 className='text-center text-3xl font-bold mb-10 mt-10'>Projects</h1>
+        <div className='flex flex-col md:flex-row md:justify-center md:items-start gap-10'>
+          <ProjectCard
+            title="Who's Next?(Web Design)"
+            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
+            image={Uiweb}
+            tags={['Figma']}
+            link="#"
+          />
+
+          <ProjectCard
+            title="Chapterly"
+            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
+            image={Uiweb}
+            tags={['Mongo','ExpressJS','React', 'NodeJS']}
+            link="#"
+          />
+          <ProjectCard
+            title="Who's Next?(Web Design)"
+            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
+            image={Uiweb}
+            tags={['Figma']}
+            link="#"
+          />
+
+        </div>
       </section>
     </main>
   )

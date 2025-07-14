@@ -19,18 +19,28 @@ const icons = [
 ]
 const IconMarquee = () => {
   return (
-    <div className='mt-5'>
-        <Marquee className='' speed={50} gradient={false}>
-            {icons.map((item,idx) => (
-                <div 
-                key={idx}
-                className='mr-20'
-                title={item.label}>
-                    {item.icon}
-                </div>
-            ))}
-        </Marquee>
-    </div>
+   <div className="mt-5 relative overflow-hidden">
+  <div
+    className="w-full"
+    style={{
+      WebkitMaskImage:
+        'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+      maskImage:
+        'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+      WebkitMaskRepeat: 'no-repeat',
+      maskRepeat: 'no-repeat',
+    }}
+  >
+    <Marquee speed={70} gradient={false} pauseOnHover={true}>
+      {icons.map((item, idx) => (
+        <div key={idx} className="mr-20" title={item.label}>
+          {item.icon}
+        </div>
+      ))}
+    </Marquee>
+  </div>
+</div>
+
   )
 }
 

@@ -45,6 +45,7 @@ const NavBar = () => {
               key={item}
               href={`#${item.toLowerCase()}`}
               className='block hover:text-blue-500 font-medium transition text-gray-800'
+              onClick={() => {showDropdown(false)}}
               >
                 {item}
               </a>
