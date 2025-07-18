@@ -62,11 +62,12 @@ const Home = () => {
         <div className="">
             <IconMarquee />
         </div>
+        <p className='text-center py-7 font-semibold text-sm md:text-xl'>I'm proficient in using the MERN stack, AMP, Figma, and Tailwind CSS.</p>
       </section>
 
       <section className='w-full py-16 px-8' id='projects'>
-        <h1 className='text-center text-3xl font-bold mb-10 mt-10'>Projects</h1>
-        <div className='flex flex-col md:flex-row md:justify-center md:items-start gap-10'>
+        <h1 className='text-start text-3xl font-bold mb-10 mt-10'>Projects</h1>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
           <ProjectCard
             title="Who's Next?(Web Design)"
             description="A job matching platform that connects job seekers and recruiters through interactive swiping."
@@ -83,7 +84,28 @@ const Home = () => {
             link="#"
           />
           <ProjectCard
-            title="Who's Next?(Web Design)"
+            title="Room Booking System"
+            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
+            image={Uiweb}
+            tags={['Figma']}
+            link="#"
+          />
+          <ProjectCard
+            title="Room Booking System"
+            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
+            image={Uiweb}
+            tags={['Figma']}
+            link="#"
+          />
+          <ProjectCard
+            title="Room Booking System"
+            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
+            image={Uiweb}
+            tags={['Figma']}
+            link="#"
+          />
+          <ProjectCard
+            title="Room Booking System"
             description="A job matching platform that connects job seekers and recruiters through interactive swiping."
             image={Uiweb}
             tags={['Figma']}
