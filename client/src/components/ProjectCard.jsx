@@ -7,7 +7,7 @@ const ProjectCard = ({title, image, description, link, tags}) => {
         <img 
         src={image}
         alt={title}
-        className='rounded-lg object-cover transition-transform duration-300 hover:scale-110 origin-center' />
+        className='rounded-lg object-cover origin-center' />
       </div>
        
 

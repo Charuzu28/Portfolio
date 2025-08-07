@@ -7,13 +7,18 @@ import myPhoto from './../assets/mypics/2.png'
 import IconMarquee from '../components/IconMarquee';
 
 import ProjectCard from '../components/ProjectCard';
-import Uiweb from '../assets/project/UIweb.png'
+import Uiweb from '../assets/project/UIweb.png';
+import BC from '../assets/project/BarangayConnect.png';
+import Chapterly from '../assets/project/Chapterly.png';
+import RoomBooking from '../assets/project/RoomBooking.png';
+import comingSoon from '../assets/project/comingSoon.jpg';
 
 
 
 const Home = () => {
   return (
     <main className='min-h-screen mx-auto max-w-7xl'>
+      {/* Contents */}
       <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto md:p-20 md:m-0 h-screen mt-10'>
           <div className='flex-1 text-center md:text-left space-y-3 p-10'>
             <h1 className='text-3xl md:text-4xl font-bold font-poppins'>Hi! Welcome to my page!</h1>
@@ -62,9 +67,11 @@ const Home = () => {
         <div className="">
             <IconMarquee />
         </div>
-        <p className='text-center py-7 font-semibold text-sm md:text-xl'>I'm proficient in using the MERN stack, AMP, Figma, and Tailwind CSS.</p>
+        <p className='text-center py-7 font-semibold text-sm md:text-xl'>" I'm proficient in using the MERN stack, AMP stack, Figma, and Tailwind CSS. "</p>
       </section>
 
+
+      {/* Projects */}
       <section className='w-full py-16 px-8' id='projects'>
         <h1 className='text-start text-3xl font-bold mb-10 mt-10'>Projects</h1>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
@@ -78,41 +85,48 @@ const Home = () => {
 
           <ProjectCard
             title="Chapterly"
-            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
-            image={Uiweb}
-            tags={['Mongo','ExpressJS','React', 'NodeJS']}
+            description="A Web-Based Bookshop E-commerce System"
+            image={Chapterly}
+            tags={['Mongo','ExpressJS','React', 'NodeJS', 'Tailwind', 'Figma']}
             link="#"
           />
           <ProjectCard
             title="Room Booking System"
-            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
-            image={Uiweb}
+            description="A Room Booking System that helps both student and professor to reserve rooms in a convenient way."
+            image={RoomBooking}
+            tags={['Mongo','ExpressJS','React', 'NodeJS', 'Tailwind', 'Figma']}
+            link="#"
+          />
+          <ProjectCard
+            title="Barangay Connect"
+            description="This is a proposed mock up UI for a barangay appointment system."
+            image={BC}
             tags={['Figma']}
             link="#"
           />
           <ProjectCard
-            title="Room Booking System"
-            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
-            image={Uiweb}
-            tags={['Figma']}
+            title="Coming Soon!!!"
+            description="Coming Soon!!!"
+            image={comingSoon}
+            tags={['Coming Soon!!!']}
             link="#"
           />
           <ProjectCard
-            title="Room Booking System"
-            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
-            image={Uiweb}
-            tags={['Figma']}
-            link="#"
-          />
-          <ProjectCard
-            title="Room Booking System"
-            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
-            image={Uiweb}
-            tags={['Figma']}
+            title="Coming Soon!!!"
+            description="Coming Soon!!!"
+            image={comingSoon}
+            tags={['Coming Soon!!!']}
             link="#"
           />
 
         </div>
+      </section>
+
+
+      <section className='flex'>
+              <div>
+                
+              </div>
       </section>
     </main>
   )
