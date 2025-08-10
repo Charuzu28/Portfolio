@@ -2,12 +2,12 @@ import React from 'react'
 
 const ProjectCard = ({title, image, description, link, tags}) => {
   return (
-    <div className='flex flex-col bg-gray-50 border border-gray-300 w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105'>
+    <div className='flex flex-col bg-gray-50 border border-gray-300 w-full rounded-lg shadow-md'>
       <div className='overflow-hidden'>
         <img 
         src={image}
         alt={title}
-        className='rounded-lg object-cover origin-center' />
+        className='rounded-lg object-cover origin-center hover:scale-105 transition-transform duration-300' />
       </div>
        
 

@@ -1,4 +1,0 @@
-service_p73s7hq
-template_vlrelji
-
-PUBLIC_API_KEY=LMIsjHetTRDMYrPmf

@@ -67,7 +67,7 @@ const Home = () => {
         <div className="">
             <IconMarquee />
         </div>
-        <p className='text-center py-7 font-semibold text-sm md:text-xl'>" I'm proficient in using the MERN stack, AMP stack, Figma, and Tailwind CSS. "</p>
+        <p className='text-center py-7 text-sm md:text-xl text-gray-600 dark:text-gray-400' >"I'm proficient in using the MERN stack, AMP stack, Figma, and Tailwind CSS."</p>
       </section>
 
 
