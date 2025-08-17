@@ -6,9 +6,9 @@ import { RiFacebookFill } from "react-icons/ri";
 
 const Contact = () => {
   return (
-    <main className="min-h-screen">
+    <section id="contact">
       {/* Hero + form */}
-      <section className="mx-auto max-w-6xl px-4 py-12">
+      <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-16">
           <div className="space-y-3 md:max-w-md">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-poppins font-semibold leading-tight">
@@ -22,10 +22,10 @@ const Contact = () => {
             <ContactForm />
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Social / contact cards */}
-      <section className="mx-auto max-w-6xl px-4 pb-16">
+      <div className="mx-auto max-w-6xl px-4 pb-16">
         <div className="flex flex-wrap justify-center gap-6">
           {/* Email */}
           <div className="w-full sm:w-[48%] lg:w-[31%] rounded-xl bg-black p-5">
@@ -79,8 +79,8 @@ const Contact = () => {
             </a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 
