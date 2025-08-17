@@ -12,6 +12,8 @@ import BC from '../assets/project/BarangayConnect.png';
 import Chapterly from '../assets/project/Chapterly.png';
 import RoomBooking from '../assets/project/RoomBooking.png';
 import comingSoon from '../assets/project/comingSoon.jpg';
+import About from './About';
+import Contact from './Contact';
 
 
 
@@ -19,7 +21,7 @@ const Home = () => {
   return (
     <main className='min-h-screen mx-auto max-w-7xl'>
       {/* Contents */}
-      <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto md:p-20 md:m-0 h-screen mt-10'>
+      <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto md:p-20 md:m-0 h-screen mt-10' id='home'>
           <div className='flex-1 text-center md:text-left space-y-3 p-10'>
             <h1 className='text-3xl md:text-4xl font-bold font-poppins'>Hi! Welcome to my page!</h1>
               <h2 className='text-2xl md:text-3xl font-poppins'>I am <span className='font-poppins font-bold'>Charles</span><span className='text-blue-500 font-bold'>.</span></h2>
@@ -72,7 +74,7 @@ const Home = () => {
 
 
       {/* Projects */}
-      <section className='w-full py-16 px-8' id='projects'>
+      <section className='w-full py-16 px-8 my-25' id='projects'>
         <h1 className='text-start text-3xl font-bold mb-10 mt-10'>Projects</h1>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
           <ProjectCard
@@ -121,13 +123,13 @@ const Home = () => {
 
         </div>
       </section>
+      
+      <div id='about'></div>
+      {/* About */}
+      <About />
 
-
-      <section className='flex'>
-              <div>
-                
-              </div>
-      </section>
+      {/* Contact */}
+      <Contact />
     </main>
   )
 }
