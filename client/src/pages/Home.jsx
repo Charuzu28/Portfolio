@@ -12,6 +12,7 @@ import BC from '../assets/project/BarangayConnect.png';
 import Chapterly from '../assets/project/Chapterly.png';
 import RoomBooking from '../assets/project/RoomBooking.png';
 import comingSoon from '../assets/project/comingSoon.jpg';
+import blynkn from '../assets/project/Blynkn.png'
 import About from './About';
 import Contact from './Contact';
 
@@ -72,7 +73,9 @@ const Home = () => {
         <p className='text-center py-7 text-sm md:text-xl text-gray-600 dark:text-gray-400' >"I'm proficient in using the MERN stack, AMP stack, Figma, and Tailwind CSS."</p>
       </section>
 
-
+      <div id='about'></div>
+      {/* About */}
+      <About />
       {/* Projects */}
       <section className='w-full py-16 px-8 my-25' id='projects'>
         <h1 className='text-start text-3xl font-bold mb-10 mt-10'>Projects</h1>
@@ -81,10 +84,9 @@ const Home = () => {
             title="Who's Next?(Web Design)"
             description="A job matching platform that connects job seekers and recruiters through interactive swiping."
             image={Uiweb}
-            tags={['Figma']}
+            tags={['Figma','UI/UX']}
             link="#"
           />
-
           <ProjectCard
             title="Chapterly"
             description="A Web-Based Bookshop E-commerce System"
@@ -103,30 +105,26 @@ const Home = () => {
             title="Barangay Connect"
             description="This is a proposed mock up UI for a barangay appointment system."
             image={BC}
-            tags={['Figma']}
+            tags={['Figma','UI/UX']}
             link="#"
           />
           <ProjectCard
-            title="Coming Soon!!!"
-            description="Coming Soon!!!"
+            title="Graphic Designs"
+            description="My Graphic design Projects"
             image={comingSoon}
-            tags={['Coming Soon!!!']}
+            tags={['Canva', 'Adobe illustrator', 'Adobe Photoshop']}
             link="#"
           />
           <ProjectCard
-            title="Coming Soon!!!"
-            description="Coming Soon!!!"
-            image={comingSoon}
+            title="Blynk'n"
+            description="An eye strain reminder + pomodoro"
+            image={blynkn}
             tags={['Coming Soon!!!']}
-            link="#"
+            link="https://blynk-n.vercel.app/"
           />
 
         </div>
       </section>
-      
-      <div id='about'></div>
-      {/* About */}
-      <About />
 
       {/* Contact */}
       <Contact />
