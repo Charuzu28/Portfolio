@@ -79,49 +79,68 @@ const Home = () => {
       {/* Projects */}
       <section className='w-full py-16 px-8 my-25' id='projects'>
         <h1 className='text-start text-3xl font-bold mb-10 mt-10'>Projects</h1>
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
-          <ProjectCard
-            title="Who's Next?(Web Design)"
-            description="A job matching platform that connects job seekers and recruiters through interactive swiping."
-            image={Uiweb}
-            tags={['Figma','UI/UX']}
-            link="#"
-          />
-          <ProjectCard
-            title="Chapterly"
-            description="A Web-Based Bookshop E-commerce System"
-            image={Chapterly}
-            tags={['Mongo','ExpressJS','React', 'NodeJS', 'Tailwind', 'Figma']}
-            link="#"
-          />
-          <ProjectCard
-            title="Room Booking System"
-            description="A Room Booking System that helps both student and professor to reserve rooms in a convenient way."
-            image={RoomBooking}
-            tags={['Mongo','ExpressJS','React', 'NodeJS', 'Tailwind', 'Figma']}
-            link="#"
-          />
-          <ProjectCard
-            title="Barangay Connect"
-            description="This is a proposed mock up UI for a barangay appointment system."
-            image={BC}
-            tags={['Figma','UI/UX']}
-            link="#"
-          />
-          <ProjectCard
-            title="Graphic Designs"
-            description="My Graphic design Projects"
-            image={comingSoon}
-            tags={['Canva', 'Adobe illustrator', 'Adobe Photoshop']}
-            link="#"
-          />
-          <ProjectCard
+        <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory
+                        lg:grid lg:grid-cols-3 lg:overflow-visible
+                        scrollbar-hide items-stretch'>
+            <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
+              <ProjectCard
             title="Blynk'n"
             description="An eye strain reminder + pomodoro"
             image={blynkn}
             tags={['Coming Soon!!!']}
             link="https://blynk-n.vercel.app/"
           />
+            </div>
+          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
+              <ProjectCard
+            title="Chapterly"
+            description="A Web-Based Bookshop E-commerce System"
+            image={Chapterly}
+            tags={['Mongo','ExpressJS','React', 'NodeJS', 'Tailwind', 'Figma']}
+            link="#"
+          />
+          </div>
+          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
+              <ProjectCard
+                title="Who's Next?(Web Design)"
+                description="A job matching platform that connects job seekers and recruiters through interactive swiping."
+                image={Uiweb}
+                tags={['Figma','UI/UX']}
+                link="#"
+              />
+          </div>
+          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
+              <ProjectCard
+            title="Room Booking System"
+            description="A Room Booking System that helps both student and professor to reserve rooms in a convenient way."
+            image={RoomBooking}
+            tags={['Mongo','ExpressJS','React', 'NodeJS', 'Tailwind', 'Figma']}
+            link="#"
+          />
+          </div>
+          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
+              <ProjectCard
+            title="Barangay Connect"
+            description="This is a proposed mock up UI for a barangay appointment system."
+            image={BC}
+            tags={['Figma','UI/UX']}
+            link="#"
+          />
+          </div>
+          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
+               <ProjectCard
+            title="Graphic Designs"
+            description="My Graphic design Projects"
+            image={comingSoon}
+            tags={['Canva', 'Adobe illustrator', 'Adobe Photoshop']}
+            link="#"
+          />
+          </div>
+          
+          
+          
+         
+          
 
         </div>
       </section>

@@ -1,37 +1,72 @@
 import React from 'react'
 
-const ProjectCard = ({title, image, description, link, tags}) => {
+const ProjectCard = ({ title, image, description, link, tags }) => {
   return (
-    <div className='flex flex-col bg-gray-50 border border-gray-300 w-full rounded-lg shadow-md'>
-      <div className='overflow-hidden'>
-        <img 
+    <div
+      className="
+        group flex flex-col h-full
+        overflow-hidden rounded-lg bg-white
+        shadow-sm hover:shadow-xl
+        transition-all duration-300
+      "
+    >
+      {/* Image */}
+     <div className="relative h-48 w-full overflow-hidden">
+      <img
         src={image}
         alt={title}
-        className='rounded-lg object-cover origin-center hover:scale-105 transition-transform duration-300' />
-      </div>
-       
+        className="
+          h-full w-full object-cover
+          transition-transform duration-500
+          group-hover:scale-110
+        "
+      />
+    </div>
 
-        <div className='p-2'>
-          <h3 className='font-semibold px-1'>{title}</h3>
-            <p className='py-1 px-1'>{description}</p>
-            <div className='flex flex-wrap gap-2'>
-              {tags && tags.map((tag, idx) => (
-                <span
-                key={idx}
-                className='px-2 py-1 bg-gray-200 text-sm rounded-full text-gray-700'>
-                  {tag}
-                </span>
-              ))}
-            </div>
-              
-            <a 
-            href={link}
-            className='inline-block py-2 px-2 border border-gray-300 rounded-lg mt-2 mb-2 bg-white hover:bg-gray-100 transition-colors text-center text-sm'
-            target='_blank'
-            rel='noopener noreferer'>
-              View project
-            </a>
+
+      {/* Content */}
+      <div className="flex flex-col flex-1 p-4">
+        <h3 className="text-lg font-semibold text-gray-900">
+          {title}
+        </h3>
+
+        <p className="mt-2 text-sm text-gray-600 line-clamp-3">
+          {description}
+        </p>
+
+        {/* Tags */}
+        <div className="mt-3 flex flex-wrap gap-2">
+          {tags?.map((tag, idx) => (
+            <span
+              key={idx}
+              className="
+                rounded-full bg-gray-100
+                px-3 py-1 text-xs font-medium
+                text-gray-700
+              "
+            >
+              {tag}
+            </span>
+          ))}
         </div>
+
+        {/* CTA */}
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            mt-4 inline-flex items-center justify-center
+            rounded-lg border border-gray-300
+            px-4 py-2 text-sm font-medium
+            text-gray-900
+            hover:bg-gray-900 hover:text-white
+            transition-colors
+          "
+        >
+          View project →
+        </a>
+      </div>
     </div>
   )
 }
