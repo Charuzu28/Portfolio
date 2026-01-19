@@ -1,9 +1,11 @@
 import React from 'react'
-import { SiMongodb, SiExpress, SiApache, SiPhp } from 'react-icons/si'
+import { SiMongodb, SiExpress, SiPhp } from 'react-icons/si'
 import { FaReact, FaNodeJs, FaFigma } from 'react-icons/fa'
 import { DiMysql } from 'react-icons/di'
 import { RiTailwindCssFill } from 'react-icons/ri'
 import Marquee from 'react-fast-marquee'
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiPostman } from "react-icons/si";
 
 
 const icons = [
@@ -11,11 +13,12 @@ const icons = [
   {icon: <SiExpress size={70}/>, label: "Express"},
   {icon: <FaReact size={70}/>, label: "React"},
   {icon: <FaNodeJs size={70}/>, label: "Nodejs"},
-  {icon: <SiApache size={70}/>, label: "Apache"},
   {icon: <DiMysql size={70}/>, label: "MySQL"},
   {icon: <SiPhp size={70}/>, label: "PHP"},
+  {icon: <IoLogoJavascript size={70}/>, label: "Javascript"},
   {icon: <RiTailwindCssFill size={70}/>, label: "TailwindCSS"},
   {icon: <FaFigma size={70}/>, label: "Figma"},
+  {icon: <SiPostman size={70}/>, label: "Postman"},
 ]
 const IconMarquee = () => {
   return (
