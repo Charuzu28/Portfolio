@@ -22,11 +22,11 @@ const Home = () => {
   return (
     <main className='min-h-screen mx-auto max-w-7xl'>
       {/* Contents */}
-      <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto md:p-20 md:m-0 h-screen mt-10' id='home'>
+      <section className='flex flex-col-reverse md:flex-row items-center justify-center mx-auto md:p-20 md:m-0 h-screen ' id='home'>
           <div className='flex-1 text-center md:text-left space-y-3 p-10'>
             <h1 className='text-3xl md:text-4xl font-bold font-poppins'>Hi! Welcome to my page!</h1>
               <h2 className='text-2xl md:text-3xl font-poppins'>I am <span className='font-poppins font-bold'>Charles</span><span className='text-blue-500 font-bold'>.</span></h2>
-              <p className='text-lg md:text-xl text-gray-600 font-poppins'>A Web developer, Web Designer, and Graphic Designer.</p>
+              <p className='text-lg md:text-xl text-gray-600 font-poppins'>A Full-stack Web developer, Web Designer, and Graphic Designer.</p>
               <div className='flex flex-row justify-center md:justify-start space-x-4'>
               <a
               href='https://github.com/Charuzu28'
@@ -66,11 +66,11 @@ const Home = () => {
         
         {/* Tech stack */}
       <section className='py-16 px-8 w-full max-w-6xl mx-auto items-center justify-center'>
-        <h3 className="text-3xl text-center font-bold mb-4">Tech Stack & Tools</h3>
+        <h3 className="text-3xl text-center font-bold mb-4 font-poppins">Tech Stack & Tools</h3>
         <div className="">
             <IconMarquee />
         </div>
-        <p className='text-center py-7 text-sm md:text-xl text-gray-600 dark:text-gray-400' >"I'm proficient in using the MERN stack, AMP stack, Figma, and Tailwind CSS."</p>
+        <p className='font-poppins text-center py-7 text-sm md:text-lg text-gray-600 dark:text-gray-400' >"MongoDB, ExpressJS, ReactJS, NodeJS, TailwindCSS, PHP, Javascript, Figma, and Postman API"</p>
       </section>
 
       <div id='about'></div>
@@ -82,7 +82,8 @@ const Home = () => {
         <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory
                         lg:grid lg:grid-cols-3 lg:overflow-visible
                         scrollbar-hide items-stretch'>
-            <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
+                          <p className='items-center justify-center'>Coming soon!</p>
+            {/* <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
               <ProjectCard
             title="Blynk'n"
             description="An eye strain reminder + pomodoro"
@@ -136,7 +137,7 @@ const Home = () => {
             link="#"
           />
           </div>
-          
+           */}
           
           
          
