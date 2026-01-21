@@ -1,6 +1,5 @@
 import emailjs from 'emailjs-com';
 import { useRef, useState } from 'react';
-import { FaArrowRightLong } from "react-icons/fa6";
 
 // --- small helpers ---
 const sanitize = (str, max = 500) =>
@@ -65,7 +64,7 @@ const ContactForm = () => {
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Enter your name"
             required
             maxLength={80}
             className="w-full placeholder:text-gray-400 border rounded px-3 py-2 border-gray-200 bg-white"
@@ -73,7 +72,7 @@ const ContactForm = () => {
           <input
             type="email"
             name="email"
-            placeholder="E-mail"
+            placeholder=" Enter your e-mail"
             required
             maxLength={120}
             className="w-full placeholder:text-gray-400 border rounded px-3 py-2 border-gray-200 bg-white"
@@ -82,14 +81,14 @@ const ContactForm = () => {
         <input
           type="text"
           name="subject"
-          placeholder="Subject"
+          placeholder="Subject / Reason"
           required
           maxLength={120}
           className="w-full placeholder:text-gray-400 px-3 border border-gray-200 rounded py-2 bg-white"
         />
         <textarea
           name="message"
-          placeholder="Message"
+          placeholder="Add your meessage here...."
           rows={5}
           required
           maxLength={1000}
@@ -99,10 +98,9 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={sending}
-          className="bg-black rounded hover:bg-gray-700 inline-flex justify-center items-center gap-3 py-3 px-4 cursor-pointer text-sm font-medium text-white transition-colors active:scale-[0.99] disabled:opacity-60"
+          className="bg-black rounded hover:bg-gray-600 inline-flex justify-center items-center gap-3 py-3 px-4 cursor-pointer text-sm font-medium text-white transition-colors active:scale-[0.99] disabled:opacity-60"
         >
           {sending ? "Sending..." : "Submit"}{" "}
-          <FaArrowRightLong className="size-4" />
         </button>
       </form>
     </div>

@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 import { FaInstagramSquare } from "react-icons/fa";
 
-import myPhoto from './../assets/mypics/2.png'
+import myPhoto from './../assets/mypics/3.jpg'
 import IconMarquee from '../components/IconMarquee';
 
 import ProjectCard from '../components/ProjectCard';
@@ -15,6 +15,7 @@ import comingSoon from '../assets/project/comingSoon.jpg';
 import blynkn from '../assets/project/Blynkn.png'
 import About from './About';
 import Contact from './Contact';
+import Timeline from '../components/Timeline/Timeline.jsx'
 
 
 
@@ -70,84 +71,21 @@ const Home = () => {
         <div className="">
             <IconMarquee />
         </div>
-        <p className='font-poppins text-center py-7 text-sm md:text-lg text-gray-600 dark:text-gray-400' >"MongoDB, ExpressJS, ReactJS, NodeJS, TailwindCSS, PHP, Javascript, Figma, and Postman API"</p>
+        <p className='font-poppins text-center py-7 text-sm md:text-lg text-black' >"MongoDB, ExpressJS, ReactJS, NodeJS, TailwindCSS, PHP, Javascript, Figma, and Postman API"</p>
       </section>
 
-      <div id='about'></div>
       {/* About */}
       <About />
       {/* Projects */}
-      <section className='w-full py-16 px-8 my-25' id='projects'>
-        <h1 className='text-start text-3xl font-bold mb-10 mt-10'>Projects</h1>
-        <div className='flex gap-6 overflow-x-auto snap-x snap-mandatory
-                        lg:grid lg:grid-cols-3 lg:overflow-visible
-                        scrollbar-hide items-stretch'>
-                          <p className='items-center justify-center'>Coming soon!</p>
-            {/* <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
-              <ProjectCard
-            title="Blynk'n"
-            description="An eye strain reminder + pomodoro"
-            image={blynkn}
-            tags={['Coming Soon!!!']}
-            link="https://blynk-n.vercel.app/"
-          />
-            </div>
-          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
-              <ProjectCard
-            title="Chapterly"
-            description="A Web-Based Bookshop E-commerce System"
-            image={Chapterly}
-            tags={['Mongo','ExpressJS','React', 'NodeJS', 'Tailwind', 'Figma']}
-            link="#"
-          />
-          </div>
-          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
-              <ProjectCard
-                title="Who's Next?(Web Design)"
-                description="A job matching platform that connects job seekers and recruiters through interactive swiping."
-                image={Uiweb}
-                tags={['Figma','UI/UX']}
-                link="#"
-              />
-          </div>
-          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
-              <ProjectCard
-            title="Room Booking System"
-            description="A Room Booking System that helps both student and professor to reserve rooms in a convenient way."
-            image={RoomBooking}
-            tags={['Mongo','ExpressJS','React', 'NodeJS', 'Tailwind', 'Figma']}
-            link="#"
-          />
-          </div>
-          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
-              <ProjectCard
-            title="Barangay Connect"
-            description="This is a proposed mock up UI for a barangay appointment system."
-            image={BC}
-            tags={['Figma','UI/UX']}
-            link="#"
-          />
-          </div>
-          <div className='min-w-[85%] sm:min-w-[70%] lg:min-w-0 snap-center'>
-               <ProjectCard
-            title="Graphic Designs"
-            description="My Graphic design Projects"
-            image={comingSoon}
-            tags={['Canva', 'Adobe illustrator', 'Adobe Photoshop']}
-            link="#"
-          />
-          </div>
-           */}
-          
-          
-         
-          
-
-        </div>
+      <section className='mb-10' id='projects'>
+        <h1 className='text-center text-3xl font-bold mb-10 mt-10'>PROJECTS</h1>
+        <Timeline />
       </section>
 
       {/* Contact */}
+      <div className='w-full mt-10'>
       <Contact />
+      </div>
     </main>
   )
 }
