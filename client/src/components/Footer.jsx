@@ -6,9 +6,9 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className='bg-white flex px-3 py-5 items-center justify-center '>
-        <div className='text-sm text-center text-gray-500'>
-          © {year} Chs | All Rights Reserved
+    <footer className='bg-black flex px-3 py-5 items-center justify-center '>
+        <div className='text-sm text-center text-white flex gap-0.5'>
+          © {year} Chs <p className='text-blue-600 font-extrabold'>. </p> | All Rights Reserved
         </div>
     </footer>
   )
