@@ -8,7 +8,7 @@ const SkillCard = ({ skill }) => {
       border border-gray-300 rounded-lg
       hover:bg-black hover:text-white
       text-xs md:text-sm font-poppins font-medium
-      transition
+      transition cursor-pointer
     ">
 
       {skill}
